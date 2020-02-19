@@ -22,7 +22,7 @@
 
 
       <div formArrayName="listOfDays">
-        <div *ngFor="let day of tripDetailsForm.get('listOfDays').controls; let i=index">
+        <div *ngFor="let day of tripDetailsForm.get('listOfDays')['controls']; let i=index">
           <div [formGroupName]="i">
             <h3>Add new day</h3>
             <div class="form-group">
